@@ -1,0 +1,37 @@
+{
+  "document": {
+    "doc_id": "D_DE_P", "country": "Germany", "code": "DE", "doc_type": "Passport", "flag": "🇩🇪"
+  },
+  "rules": [
+    {
+      "entryRule": { "entry_id": "VNM_VISA_EXEMPT", "rule_name": "Vietnam Visa Exemption", "visa_type": "Visa-Free (45 days)", "max_days": 45, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "VN" },
+      "mapping": { "visa_required": false }
+    },
+    {
+      "entryRule": { "entry_id": "USA_ESTA", "rule_name": "USA ESTA", "visa_type": "ESTA Required", "max_days": 90, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "US" },
+      "mapping": { "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "AFG_VISA", "rule_name": "Afghanistan Visa", "visa_type": "Visa Required", "max_days": 30, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "AF" },
+      "mapping": { "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "JPN_VISA_WAIVER", "rule_name": "Japan Visa Waiver", "visa_type": "Visa-Free", "max_days": 90, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "JP" },
+      "mapping": { "visa_required": false }
+    },
+    {
+      "entryRule": { "entry_id": "CAN_ETA", "rule_name": "Canada eTA", "visa_type": "eTA Required", "max_days": 180, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "CA" },
+      "mapping": { "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "GBR_VISA_WAIVER", "rule_name": "UK Visa Waiver", "visa_type": "Visa-Free", "max_days": 180, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "GB" },
+      "mapping": { "visa_required": false }
+    }
+  ]
+}

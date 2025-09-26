@@ -1,0 +1,52 @@
+{
+  "document": {
+    "doc_id": "D_US_P", "country": "United States", "code": "US", "doc_type": "Passport", "flag": "🇺🇸"
+  },
+  "rules": [
+    {
+      "entryRule": { "entry_id": "VNM_EVISA", "rule_name": "Vietnam eVisa", "visa_type": "eVisa Required", "max_days": 90, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "VN" },
+      "mapping": { "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "DEU_SCHENGEN", "rule_name": "Schengen Area", "visa_type": "Visa-Free", "max_days": 90, "period_of_stay_type": "90-in-180" },
+      "applicability": { "entry_country_code": "DE" },
+      "mapping": { "visa_required": false }
+    },
+    {
+      "entryRule": { "entry_id": "FRA_SCHENGEN", "rule_name": "Schengen Area", "visa_type": "Visa-Free", "max_days": 90, "period_of_stay_type": "90-in-180" },
+      "applicability": { "entry_country_code": "FR" },
+      "mapping": { "visa_required": false }
+    },
+    {
+      "entryRule": { "entry_id": "ESP_SCHENGEN", "rule_name": "Schengen Area", "visa_type": "Visa-Free", "max_days": 90, "period_of_stay_type": "90-in-180" },
+      "applicability": { "entry_country_code": "ES" },
+      "mapping": { "visa_required": false }
+    },
+    {
+      "entryRule": { "entry_id": "AFG_VISA", "rule_name": "Afghanistan Visa", "visa_type": "Visa Required", "max_days": 30, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "AF" },
+      "mapping": { "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "JPN_VISA_WAIVER", "rule_name": "Japan Visa Waiver", "visa_type": "Visa-Free", "max_days": 90, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "JP" },
+      "mapping": { "visa_required": false }
+    },
+    {
+      "entryRule": { "entry_id": "CAN_VISA_WAIVER", "rule_name": "Canada Visa Waiver", "visa_type": "Visa-Free", "max_days": 180, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "CA" },
+      "mapping": { "visa_required": false }
+    },
+    {
+      "entryRule": { "entry_id": "GBR_VISA_WAIVER", "rule_name": "UK Visa Waiver", "visa_type": "Visa-Free", "max_days": 180, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "GB" },
+      "mapping": { "visa_required": false }
+    },
+    {
+      "entryRule": { "entry_id": "AUS_ETA", "rule_name": "Australia ETA", "visa_type": "ETA Required", "max_days": 90, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "AU" },
+      "mapping": { "visa_required": true }
+    }
+  ]
+}

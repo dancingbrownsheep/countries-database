@@ -1,0 +1,27 @@
+{
+  "document": {
+    "doc_id": "D_AF_P", "country": "Afghanistan", "code": "AF", "doc_type": "Passport", "flag": "🇦🇫"
+  },
+  "rules": [
+    {
+      "entryRule": { "entry_id": "ALB_EVISA", "rule_name": "Albania eVisa", "visa_type": "eVisa Required", "max_days": 90, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "AL" },
+      "mapping": { "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "DZA_VISA", "rule_name": "Algeria Visa", "visa_type": "Visa Required", "max_days": 30, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "DZ" },
+      "mapping": { "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "USA_VISA", "rule_name": "USA Visa", "visa_type": "Visa Required", "max_days": 180, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "US" },
+      "mapping": { "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "FRA_VISA", "rule_name": "France Visa", "visa_type": "Visa Required", "max_days": 90, "period_of_stay_type": "Fixed" },
+      "applicability": { "entry_country_code": "FR" },
+      "mapping": { "visa_required": true }
+    }
+  ]
+}
