@@ -1,37 +1,51 @@
 {
   "document": {
-    "doc_id": "D_DE_P", "country": "Germany", "code": "DE", "doc_type": "Passport", "flag": "🇩🇪"
+    "doc_id": "P-DE",
+    "country": "Germany",
+    "code": "DE",
+    "doc_type": "Passport",
+    "flag": "🇩🇪"
   },
   "rules": [
     {
-      "entryRule": { "entry_id": "VNM_VISA_EXEMPT", "rule_name": "Vietnam Visa Exemption", "visa_type": "Visa-Free (45 days)", "max_days": 45, "period_of_stay_type": "Fixed" },
-      "applicability": { "entry_country_code": "VN" },
-      "mapping": { "visa_required": false }
+      "entryRule": { "entry_id": "FR_NO_VISA", "entry_country": "France", "visa_type": "Visa Exempt (Schengen Area)", "max_days": 90, "period_of_stay_type": "Within 180 days" },
+      "mapping": { "map_id": "DE_FR_MAP", "doc_id": "P-DE", "entry_id": "FR_NO_VISA", "visa_required": false }
     },
     {
-      "entryRule": { "entry_id": "USA_ESTA", "rule_name": "USA ESTA", "visa_type": "ESTA Required", "max_days": 90, "period_of_stay_type": "Fixed" },
-      "applicability": { "entry_country_code": "US" },
-      "mapping": { "visa_required": true }
+      "entryRule": { "entry_id": "TH_NO_VISA", "entry_country": "Thailand", "visa_type": "Visa Exempt", "max_days": 30, "period_of_stay_type": "Per entry" },
+      "mapping": { "map_id": "DE_TH_MAP", "doc_id": "P-DE", "entry_id": "TH_NO_VISA", "visa_required": false }
     },
     {
-      "entryRule": { "entry_id": "AFG_VISA", "rule_name": "Afghanistan Visa", "visa_type": "Visa Required", "max_days": 30, "period_of_stay_type": "Fixed" },
-      "applicability": { "entry_country_code": "AF" },
-      "mapping": { "visa_required": true }
+      "entryRule": { "entry_id": "SG_NO_VISA", "entry_country": "Singapore", "visa_type": "Visa Exempt", "max_days": 90, "period_of_stay_type": "Per entry" },
+      "mapping": { "map_id": "DE_SG_MAP", "doc_id": "P-DE", "entry_id": "SG_NO_VISA", "visa_required": false }
     },
     {
-      "entryRule": { "entry_id": "JPN_VISA_WAIVER", "rule_name": "Japan Visa Waiver", "visa_type": "Visa-Free", "max_days": 90, "period_of_stay_type": "Fixed" },
-      "applicability": { "entry_country_code": "JP" },
-      "mapping": { "visa_required": false }
+      "entryRule": { "entry_id": "MY_NO_VISA", "entry_country": "Malaysia", "visa_type": "Visa Exempt", "max_days": 90, "period_of_stay_type": "Per entry" },
+      "mapping": { "map_id": "DE_MY_MAP", "doc_id": "P-DE", "entry_id": "MY_NO_VISA", "visa_required": false }
     },
     {
-      "entryRule": { "entry_id": "CAN_ETA", "rule_name": "Canada eTA", "visa_type": "eTA Required", "max_days": 180, "period_of_stay_type": "Fixed" },
-      "applicability": { "entry_country_code": "CA" },
-      "mapping": { "visa_required": true }
+      "entryRule": { "entry_id": "JP_NO_VISA", "entry_country": "Japan", "visa_type": "Visa Exempt", "max_days": 90, "period_of_stay_type": "Per entry" },
+      "mapping": { "map_id": "DE_JP_MAP", "doc_id": "P-DE", "entry_id": "JP_NO_VISA", "visa_required": false }
     },
     {
-      "entryRule": { "entry_id": "GBR_VISA_WAIVER", "rule_name": "UK Visa Waiver", "visa_type": "Visa-Free", "max_days": 180, "period_of_stay_type": "Fixed" },
-      "applicability": { "entry_country_code": "GB" },
-      "mapping": { "visa_required": false }
+      "entryRule": { "entry_id": "KR_NO_VISA", "entry_country": "South Korea", "visa_type": "Visa Exempt", "max_days": 90, "period_of_stay_type": "Per entry" },
+      "mapping": { "map_id": "DE_KR_MAP", "doc_id": "P-DE", "entry_id": "KR_NO_VISA", "visa_required": false }
+    },
+    {
+      "entryRule": { "entry_id": "US_VISA_WAIVER", "entry_country": "United States", "visa_type": "Visa Waiver (ESTA)", "max_days": 90, "period_of_stay_type": "Per entry" },
+      "mapping": { "map_id": "DE_US_MAP", "doc_id": "P-DE", "entry_id": "US_VISA_WAIVER", "visa_required": false }
+    },
+    {
+      "entryRule": { "entry_id": "CA_NO_VISA", "entry_country": "Canada", "visa_type": "eTA Required (Visa Exempt)", "max_days": 180, "period_of_stay_type": "Per entry" },
+      "mapping": { "map_id": "DE_CA_MAP", "doc_id": "P-DE", "entry_id": "CA_NO_VISA", "visa_required": false }
+    },
+    {
+      "entryRule": { "entry_id": "VN_VISA", "entry_country": "Vietnam", "visa_type": "Visa Required (eVisa Available)", "max_days": 45, "period_of_stay_type": "Fixed" },
+      "mapping": { "map_id": "DE_VN_MAP", "doc_id": "P-DE", "entry_id": "VN_VISA", "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "ID_NO_VISA", "entry_country": "Indonesia", "visa_type": "Visa Exempt", "max_days": 30, "period_of_stay_type": "Per entry" },
+      "mapping": { "map_id": "DE_ID_MAP", "doc_id": "P-DE", "entry_id": "ID_NO_VISA", "visa_required": false }
     }
   ]
 }
