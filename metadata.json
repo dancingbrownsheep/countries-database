@@ -1,5 +1,4 @@
 {
   "name": "countries database",
-  "description": "An application to track your travel stays and dynamically check visa requirements based on your citizenship. User data and stays are saved locally for persistence.",
-  "requestFramePermissions": []
+  "description": "An application to track your travel stays and dynamically check visa requirements based on your citizenship. User data and stays are saved locally for persistence."
 }
