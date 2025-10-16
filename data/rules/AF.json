@@ -1,27 +1,51 @@
 {
   "document": {
-    "doc_id": "D_AF_P", "country": "Afghanistan", "code": "AF", "doc_type": "Passport", "flag": "🇦🇫"
+    "doc_id": "P-AF",
+    "country": "Afghanistan",
+    "code": "AF",
+    "doc_type": "Passport",
+    "flag": "🇦🇫"
   },
   "rules": [
     {
-      "entryRule": { "entry_id": "ALB_EVISA", "rule_name": "Albania eVisa", "visa_type": "eVisa Required", "max_days": 90, "period_of_stay_type": "Fixed" },
-      "applicability": { "entry_country_code": "AL" },
-      "mapping": { "visa_required": true }
+      "entryRule": { "entry_id": "FR_VISA", "entry_country": "France", "visa_type": "Schengen Visa Required", "max_days": 90, "period_of_stay_type": "Within 180 days" },
+      "mapping": { "map_id": "AF_FR_MAP", "doc_id": "P-AF", "entry_id": "FR_VISA", "visa_required": true }
     },
     {
-      "entryRule": { "entry_id": "DZA_VISA", "rule_name": "Algeria Visa", "visa_type": "Visa Required", "max_days": 30, "period_of_stay_type": "Fixed" },
-      "applicability": { "entry_country_code": "DZ" },
-      "mapping": { "visa_required": true }
+      "entryRule": { "entry_id": "DE_VISA", "entry_country": "Germany", "visa_type": "Schengen Visa Required", "max_days": 90, "period_of_stay_type": "Within 180 days" },
+      "mapping": { "map_id": "AF_DE_MAP", "doc_id": "P-AF", "entry_id": "DE_VISA", "visa_required": true }
     },
     {
-      "entryRule": { "entry_id": "USA_VISA", "rule_name": "USA Visa", "visa_type": "Visa Required", "max_days": 180, "period_of_stay_type": "Fixed" },
-      "applicability": { "entry_country_code": "US" },
-      "mapping": { "visa_required": true }
+      "entryRule": { "entry_id": "TH_VISA", "entry_country": "Thailand", "visa_type": "Visa Required", "max_days": 30, "period_of_stay_type": "Fixed" },
+      "mapping": { "map_id": "AF_TH_MAP", "doc_id": "P-AF", "entry_id": "TH_VISA", "visa_required": true }
     },
     {
-      "entryRule": { "entry_id": "FRA_VISA", "rule_name": "France Visa", "visa_type": "Visa Required", "max_days": 90, "period_of_stay_type": "Fixed" },
-      "applicability": { "entry_country_code": "FR" },
-      "mapping": { "visa_required": true }
+      "entryRule": { "entry_id": "SG_VISA", "entry_country": "Singapore", "visa_type": "Visa Required", "max_days": 30, "period_of_stay_type": "Fixed" },
+      "mapping": { "map_id": "AF_SG_MAP", "doc_id": "P-AF", "entry_id": "SG_VISA", "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "MY_VISA", "entry_country": "Malaysia", "visa_type": "Visa Required", "max_days": 30, "period_of_stay_type": "Fixed" },
+      "mapping": { "map_id": "AF_MY_MAP", "doc_id": "P-AF", "entry_id": "MY_VISA", "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "JP_VISA", "entry_country": "Japan", "visa_type": "Visa Required", "max_days": 15, "period_of_stay_type": "Fixed" },
+      "mapping": { "map_id": "AF_JP_MAP", "doc_id": "P-AF", "entry_id": "JP_VISA", "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "KR_VISA", "entry_country": "South Korea", "visa_type": "Visa Required", "max_days": 30, "period_of_stay_type": "Fixed" },
+      "mapping": { "map_id": "AF_KR_MAP", "doc_id": "P-AF", "entry_id": "KR_VISA", "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "US_VISA", "entry_country": "United States", "visa_type": "Visa Required", "max_days": 180, "period_of_stay_type": "Per entry" },
+      "mapping": { "map_id": "AF_US_MAP", "doc_id": "P-AF", "entry_id": "US_VISA", "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "CA_VISA", "entry_country": "Canada", "visa_type": "Visa Required", "max_days": 180, "period_of_stay_type": "Per entry" },
+      "mapping": { "map_id": "AF_CA_MAP", "doc_id": "P-AF", "entry_id": "CA_VISA", "visa_required": true }
+    },
+    {
+      "entryRule": { "entry_id": "ID_VISA", "entry_country": "Indonesia", "visa_type": "Visa Required", "max_days": 30, "period_of_stay_type": "Fixed" },
+      "mapping": { "map_id": "AF_ID_MAP", "doc_id": "P-AF", "entry_id": "ID_VISA", "visa_required": true }
     }
   ]
 }
